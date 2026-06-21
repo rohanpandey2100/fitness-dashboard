@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Progress Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Fitness Progress Dashboard</h1>
+
+        <div class="card">
+            <h2>User Profile</h2>
+            <p><strong>Name:</strong> Rohan</p>
+            <p><strong>Goal:</strong> Stay Fit & Healthy</p>
+        </div>
+
+        <div class="card">
+            <h2>Weight Tracker</h2>
+
+            <input type="number" id="weight" placeholder="Enter Weight (kg)">
+            <button onclick="saveWeight()">Save Weight</button>
+
+            <h3 id="weightDisplay">Current Weight: -- kg</h3>
+        </div>
+
+        <div class="card">
+            <h2>Water Intake</h2>
+
+            <input type="number" id="water" placeholder="Glasses of Water">
+            <button onclick="updateWater()">Update</button>
+
+            <div class="progress">
+                <div id="waterBar"></div>
+            </div>
+
+            <p id="waterText">0 / 8 Glasses</p>
+        </div>
+
+        <div class="card">
+            <h2>Workout Progress</h2>
+
+            <input type="number" id="workout" placeholder="Workout %">
+            <button onclick="updateWorkout()">Update</button>
+
+            <div class="progress">
+                <div id="workoutBar"></div>
+            </div>
+
+            <p id="workoutText">0%</p>
+        </div>
+
+        <div class="card">
+            <h2>BMI Calculator</h2>
+
+            <input type="number" id="height" placeholder="Height (cm)">
+            <input type="number" id="bmiWeight" placeholder="Weight (kg)">
+
+            <button onclick="calculateBMI()">Calculate BMI</button>
+
+            <h3 id="bmiResult"></h3>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
